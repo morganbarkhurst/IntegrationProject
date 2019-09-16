@@ -1,4 +1,5 @@
-# IntegrationProject
+#Morgan Barkhurst
+#A basic review of things covered in class thus far is as follows
 
 print("""
 Hello there! 
