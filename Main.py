@@ -66,3 +66,30 @@ elif 60 <= grade < 70:
     print("Fair")
 else:
     print("Poor")
+
+
+grade = 95
+if grade >= 94:
+    print("Excellent!")
+
+originalPrice = float(input("Enter the original cost of the item: "))
+salePrice = float(input("Enter the sale price: "))
+percentOff = int((originalPrice - salePrice)/originalPrice * 100)
+print("Original price: $", format(originalPrice, ".2f"), sep=" ")
+print("Sale price: $", format(salePrice, ".2f"), sep=" ")
+print("Percent off: $", format(percentOff, "d"),"%", sep=" ")
+if(percentOff >= 50):
+    print("You got a great sale!")
+
+if(percentOff >= 50):
+    print("Congratulations!")
+print("Done!")
+
+
+temperatureString = input("Enter the water temperature in degrees Farenheit: ")
+temperature = int(temperatureString)
+if temperature >= 212:
+    print("Water is boiling.")
+    print("That's really hot!")
+else:
+    print("The water is not boiling.")
