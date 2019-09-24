@@ -4,9 +4,78 @@
 print("""
 Hello there!
 I'm here to review some of the things you have been learning in your COP 1500 class
-Here are some things from exersizes 1-3:
-We will do some basic adding
 """)
+
+number = 1
+while number <= 10:
+    if number % 2 == 0:
+	       print(number, end= "  ")
+    number = number + 1
+
+doAgain = "y"
+while doAgain == "y":
+    word = input("Enter a word:")
+    print("First letter of " + word  + " is " + word[0])
+    doAgain = input("Type ‘y’ to enter another word and anything else to quit.")
+    print("Done!")
+
+
+countdown = 100
+while countdown >= 0:
+    print(countdown)
+    countdown -= 1
+print("Done!")
+
+bonus = 25
+salary = 50
+salary += bonus
+print("Total salary: ", salary)
+
+intList = []
+data = float(input("""I will make a list of all your data
+It must be greater than 0.
+When you are done, input 0 or any negative number
+"""))
+while(data > 0):
+    intList.append(data)
+    data = float(input())
+print(intList)
+
+intList = []
+data = float(input("""I will make a list of all your data
+It must be greater than 0.
+When you are done, input 0 or any negative number
+"""))
+while(data > 0):
+    intList.append(data)
+    data = float(input())
+print("The sum is: ", sum(intList))
+
+number2 = float(input("Enter a number between 1 and 10: "))
+while(number2 >= 10) or (number2 <= 1):
+    print("You entered an invalid number")
+    number2 = float(input("Enter a number between 1 and 10: "))
+print("You entered a valid number.")
+
+
+
+
+#This program prints numbers from 1 to value entered by user
+number = int(input())
+x = 1
+while(x <= number):
+    if(x % 10 == 0):
+        print(x)
+    else:
+        print(x, end=' ')
+    x = x + 1
+
+#Description: This program prints a person's name 20 times
+name = input("Enter a name: ")
+x = 0
+while (x < 20):
+    print(name)
+    x = x + 1
 
 print("34 + 123 =", 34 + 123)
 
@@ -77,7 +146,7 @@ salePrice = float(input("Enter the sale price: "))
 percentOff = int((originalPrice - salePrice)/originalPrice * 100)
 print("Original price: $", format(originalPrice, ".2f"), sep=" ")
 print("Sale price: $", format(salePrice, ".2f"), sep=" ")
-print("Percent off: $", format(percentOff, "d"),"%", sep=" ")
+print("Percent off: ", format(percentOff, "d"),"%", sep=" ")
 if(percentOff >= 50):
     print("You got a great sale!")
 
