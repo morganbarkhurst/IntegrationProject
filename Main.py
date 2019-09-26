@@ -6,6 +6,37 @@ Hello there!
 I'm here to review some of the things you have been learning in your COP 1500 class
 """)
 
+total = 0
+for x in range(5):
+	number = int(input("Enter a number: "))
+	total += number
+print("The total is:",total)
+
+
+favorite = input("Enter your favorite ice cream flavor: ")
+for x in range(1,5):
+	print(x + ".", favorite, end="\t")
+
+
+numIterations = 6
+for x in range(1, numIterations+1):
+	print(x, end=" ")
+
+
+numIterations = 6
+for x in range(numIterations):
+	print(x, end=" ")
+
+name = input("Enter your name: ")
+x = 0
+while(x < 20):
+    print(name, end=" ")
+    x += 1
+
+name = input("Enter your name: ")
+for x in range(20):
+    print(name)
+
 number = 1
 while number <= 10:
     if number % 2 == 0:
