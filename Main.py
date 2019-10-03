@@ -6,22 +6,74 @@ Hello there!
 I'm here to review some of the things you have been learning in your COP 1500 class
 """)
 
+# fix this .. it DOES NOT WORK
+rows = int(input("Enter rows: "))
+for column in range(1,rows+1):
+	for column in range(1,rows+1):
+		print(column)
+	print()
+
+# Write a program the prompts the user for information for three students.
+# For each student prompt for the student ID and three quiz grades.
+# Use a nested loop, where the inner loop prompts for the three quiz grades.
+# Print the student’s name and average – formatted to two decimal places.
+# View the sample output as a guide.
+for student in range(1,4):
+	average = []
+	name = input(f"Enter name of student {student}: ")
+	for scoreNum in range(1,4):
+		score = int(input(f"Enter score {scoreNum}:  "))
+		average.append(score)
+	print(f"Name: {name}")
+	finalAve = (sum(average))/3
+	print(f"Average:  {finalAve:.2f} \n")
+
+
+height = int(input("Enter height: "))
+for row in range(1, height+1):
+	for column in range(row):
+		print(row, end=" ")
+	print()
+
+
+hor = int(input("Give me a number between 1 and 10: "))
+vert = int(input("Give me another number: "))
+num = 1
+for num in range(vert):
+	for x in range(hor):
+		print(num, end=" ")
+	num += 1
+	print()
+
+name = input("What is your name: ")
+# repeats whatever is in the loop 5 times
+for x in range (5):
+	# repeats whatever is in the loop 3 times
+	for x in range(3):
+		print(name + " ", end=" ")
+	print()
+
+evenNum = []
+x = int(input())
+while(x != 100):
+	if x % 2 == 0:
+		evenNum.append(x)
+	x = int(input())
+
+
 total = 0
 for x in range(5):
 	number = int(input("Enter a number: "))
 	total += number
 print("The total is:",total)
 
+numIterations = 6
+for x in range(numIterations):
+	print(x, end=" ")
 
 favorite = input("Enter your favorite ice cream flavor: ")
 for x in range(1,5):
 	print(x + ".", favorite, end="\t")
-
-
-numIterations = 6
-for x in range(1, numIterations+1):
-	print(x, end=" ")
-
 
 numIterations = 6
 for x in range(numIterations):
