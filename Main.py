@@ -6,6 +6,43 @@ Hello there!
 I'm here to review some of the things you have been learning in your COP 1500 class
 """)
 
+doAgain = True
+while doAgain:
+	num1 = int(input("ent 1st num: "))
+	num2 = int(input("ent 2nd num: "))
+	num3 = int(input("ent 3rd num: "))
+	num4 = int(input("ent 4th num: "))
+	maxNum1 = max(num1, num2, num3)
+	print("Largest of 4 numbers is: ", maxNum1)
+	another = input("Type y to find another" + "or any other key to quit")
+	if another != "y":
+		doAgain = False
+print("Done")
+
+import math
+x = 4.7
+y = 5.3
+z = -4.8
+a = -3.2
+print(math.ceil(x))
+print(math.ceil(y))
+print(math.ceil(z))
+print(math.ceil(a))
+print(math.floor(x))
+print(math.floor(y))
+print(math.floor(z))
+print(math.floor(a))
+
+
+# sample functions
+print(abs(-4.67))
+print(pow(49,.5))
+print(int(34.8))
+print(round(6.9))
+
+import random
+print(random.randint(1,100))
+
 # fix this .. it DOES NOT WORK
 rows = int(input("Enter rows: "))
 for column in range(1,rows+1):
