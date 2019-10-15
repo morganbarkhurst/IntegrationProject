@@ -6,6 +6,54 @@ Hello there!
 I'm here to review some of the things you have been learning in your COP 1500 class
 """)
 
+
+# basic arithmatic with more functions
+def addNumbers(num1, num2):
+	print(num1, "+", num2, "=", num1 + num2)
+
+def subtractNumbers(num1, num2):
+	print(num1, "-", num2, "=", num1 - num2)
+
+def main():
+	firstNumber = int(input("Enter number between 1 and 10: "))
+	secondNumber = int(input("Enter another num between 1 and 10: "))
+	operator = input("enter a + to add or - to subtract: ")
+
+
+	if operator == "+":
+		addNumbers(firstNumber, secondNumber)
+	elif operator == "-":
+		subtractNumbers(firstNumber, secondNumber)
+	else:
+		print("Invalid operator!")
+
+	if firstNumber > 10 or secondNumber > 10:
+		print("WARNING! One of numbers is out of range")	
+### call to main program ###
+main()
+print("done")
+
+# A function is a name for lines of code - it groups the code
+import math
+
+def calculateArea(radius):
+	area = math.pi * radius ** 2
+	print("Area of a circle with a radius of", radius, "is", format(area, ".2f"))
+
+
+def calculateDiameter(radius):
+	print("The diameter is", radius * 2)
+
+def main():
+	number = int(input("Enter the radius: "))
+	# call function calculateArea (using the value in number as a parameter - which is stored in radius then)
+	calculateArea(number)
+	# call function calculateDiameter
+	calculateDiameter(number)
+
+### Call to Main ###
+main()
+
 doAgain = True
 while doAgain:
 	num1 = int(input("ent 1st num: "))
