@@ -7,7 +7,9 @@ I'm here to review some of the things you have been learning in your COP 1500 cl
 """)
 
 
+
 # basic arithmatic with more functions
+# this is a void function
 def addNumbers(num1, num2):
 	print(num1, "+", num2, "=", num1 + num2)
 
@@ -17,7 +19,7 @@ def subtractNumbers(num1, num2):
 def main():
 	firstNumber = int(input("Enter number between 1 and 10: "))
 	secondNumber = int(input("Enter another num between 1 and 10: "))
-	operator = input("enter a + to add or - to subtract: ")
+	operator = input("Enter a + to add or - to subtract: ")
 
 
 	if operator == "+":
@@ -28,7 +30,7 @@ def main():
 		print("Invalid operator!")
 
 	if firstNumber > 10 or secondNumber > 10:
-		print("WARNING! One of numbers is out of range")	
+		print("WARNING! One of numbers is out of range")
 ### call to main program ###
 main()
 print("done")
@@ -56,10 +58,10 @@ main()
 
 doAgain = True
 while doAgain:
-	num1 = int(input("ent 1st num: "))
-	num2 = int(input("ent 2nd num: "))
-	num3 = int(input("ent 3rd num: "))
-	num4 = int(input("ent 4th num: "))
+	num1 = int(input("Enter 1st number: "))
+	num2 = int(input("Enter 2nd number: "))
+	num3 = int(input("Enter 3rd number: "))
+	num4 = int(input("Enter 4th number: "))
 	maxNum1 = max(num1, num2, num3)
 	print("Largest of 4 numbers is: ", maxNum1)
 	another = input("Type y to find another" + "or any other key to quit")
@@ -309,6 +311,8 @@ grade = 95
 if grade >= 94:
     print("Excellent!")
 
+
+# Determining how good a deal is
 originalPrice = float(input("Enter the original cost of the item: "))
 salePrice = float(input("Enter the sale price: "))
 percentOff = int((originalPrice - salePrice)/originalPrice * 100)
