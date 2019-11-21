@@ -37,6 +37,7 @@ new_block()
 # The program still outputs data even if numbers are not in range
 def add_numbers(number1, number2):
     """
+From Pogil exercise
 Adds number1 to number2
     :param number1:
     :param number2:
@@ -46,6 +47,7 @@ Adds number1 to number2
 
 def subtract_numbers(a, b):
     """
+From Pogil exercise
 Subtracts num2 from num1
     :param a:
     :param b:
@@ -56,6 +58,7 @@ Subtracts num2 from num1
 def game():
     """
 Adds or subtracts numbers
+From Pogil exercise
     """
     first_number = int(input("Enter number between 1 and 10: "))
     second_number = int(input("Enter another number between 1 and 10: "))
@@ -79,6 +82,7 @@ new_block()
 
 
 # A function is a name for lines of code - it groups the code
+# From Pogil exercise
 
 
 def calculate_area(radius):
@@ -112,6 +116,7 @@ Main function to calculate area and diameter
 main()
 
 new_block()
+# From Pogil exercise
 doAgain = True
 while doAgain:
     num1 = int(input("Enter a 1st number: "))
@@ -180,6 +185,7 @@ else:
     print("Done!")
 
 new_block()
+# From Pogil exercise
 bonus = int(input("What is your bonus? Enter a whole number"))
 salary = int(input("What is your salary? Enter a whole number"))
 salary += bonus
@@ -209,6 +215,7 @@ while x <= number:
         x += 1
 
 new_block()
+# This is from Pogil a exercise
 print("Now here is some more math:")
 
 print(16 + 3)
@@ -233,6 +240,7 @@ print("Difference =", difference)
 
 new_block()
 # This will comment on your score on this project
+# From Pogil exercise
 grade = int(input("Enter your grade:"))
 if grade > 100:
     print("Error, must not be greater than 100")
@@ -251,6 +259,7 @@ else:
 
 new_block()
 # Determining how good a deal is
+# From Pogil activity
 originalPrice = float(input("Enter the original cost of the item: "))
 salePrice = float(input("Enter the sale price: "))
 percentOff = int((originalPrice - salePrice) / originalPrice * 100)
@@ -264,6 +273,7 @@ if percentOff >= 50:
 print("Done!")
 
 new_block()
+# From Pogil activity
 temperatureString = input("Enter water temperature in degrees Fahrenheit: ")
 temperature = int(temperatureString)
 if temperature >= 212:
